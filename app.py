@@ -47,5 +47,7 @@ def predict():
         pred="Approved"
 
    return {"loan_application_status": pred}
+
+   
    
     
