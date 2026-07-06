@@ -5,6 +5,11 @@ import pickle
 
 app=Flask(__name__)
 
+@app.route('/',methods=['GET'])
+def home():
+     return {"Message":"check /ping as well "}
+
+
 @app.route("/ping",methods=["GET"])
 def ping():
     return {"Message": "Hello from the server, yes i am active"}
