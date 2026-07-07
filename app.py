@@ -44,10 +44,10 @@ def predict():
    ApplicantIncome = loan_req['ApplicantIncome']
    LoanAmount = loan_req['LoanAmount']
 
-   result=clf.predict([Gender,Married,Credit_History,ApplicantIncome,LoanAmount])
+   result=clf.predict([[Gender,Married,ApplicantIncome, LoanAmount, Credit_History]])
 
    if result==0:
-        pred="Rejected"
+        pred="Rejected" 
    else:
         pred="Approved"
 
