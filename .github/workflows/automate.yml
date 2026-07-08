@@ -33,7 +33,7 @@ jobs:
   job2:
     needs: job1
     runs-on: ubuntu-latest
-    enviroments: production
+    enviroment: production
 
     steps:
       - name: checkout
